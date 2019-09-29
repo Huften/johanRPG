@@ -2903,6 +2903,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.33610716
       objectReference: {fileID: 0}
+    - target: {fileID: 1127387749103415586, guid: f730a068a86e7ae408f2b7ba4b9eb09f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2208286363514143999, guid: f730a068a86e7ae408f2b7ba4b9eb09f,
         type: 3}
       propertyPath: attackDamage
@@ -3627,7 +3632,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.15}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3638,7 +3643,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.68, y: 0.27}
+  m_Size: {x: 0.68, y: 0.69}
   m_EdgeRadius: 0
 --- !u!1 &2097848639
 GameObject:

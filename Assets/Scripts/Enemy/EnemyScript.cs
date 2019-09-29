@@ -59,17 +59,31 @@ public class EnemyScript : MonoBehaviour
         }
     }
 
+    //  void Flip()
+    //  {
+    //      if(player.position.x > transform.position.x)
+    //      {
+    //          //face right
+    //          transform.localScale = new Vector3(1, 1, 1);
+    //      }
+    //      else if(player.position.x < transform.position.x)
+    //      {
+    //          //face left
+    //          transform.localScale = new Vector3(-1, 1, 1);
+    //      }
+    //  }
+
     void Flip()
     {
-        if(player.position.x > transform.position.x)
+        if (player.position.x > transform.position.x && !facingRight || player.position.x < transform.position.x && facingRight)
         {
-            //face right
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-        else if(player.position.x < transform.position.x)
-        {
-            //face left
-            transform.localScale = new Vector3(-1, 1, 1);
+            facingRight = !facingRight;
+
+            Vector3 theScale = transform.localScale;
+
+            theScale.x *= -1;
+
+            transform.localScale = theScale;
         }
     }
 

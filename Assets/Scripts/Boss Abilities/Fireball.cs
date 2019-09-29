@@ -6,7 +6,7 @@ public class Fireball : MonoBehaviour
 {
     Animator anim;
     PlayerHealth playerHealth;
-    public GameObject PlayerHealth;
+    GameObject PlayerHealth;
     GameObject player;
 
     public float attackDamage = 0.2f;
